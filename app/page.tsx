@@ -1,11 +1,13 @@
-import { BackButton } from "@/components/BackButton";
-import { Navbar } from "@/components/Navbar";
+"use client";
+import Main from "@/components/Main";
+import { RecoilRoot } from "recoil";
 
 export default function Home() {
 	return (
-		<main className="flex flex-col">
-			<Navbar />
-			<BackButton />
+		<main className="flex flex-col h-screen">
+			<RecoilRoot>
+				<Main />
+			</RecoilRoot>
 		</main>
 	);
 }
